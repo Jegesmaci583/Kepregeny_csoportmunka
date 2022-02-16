@@ -49,8 +49,6 @@ img {
 /* MAIN CON */
 .main-con {
   width: 100%;
-  display: flex;
-  justify-content: center;
 }
 .main {
   width: 90%;
@@ -60,7 +58,6 @@ img {
   padding: 1rem;
 }
 
-/* HEADER */
 .header {
   font-size: 3rem;
   text-align: center;
@@ -134,4 +131,17 @@ img {
   padding: 1rem;
   background: var(--clr-main);
   border-radius: var(--rad);
+}
+.inner {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.inner img {
+  width: 100%;
+}
+.img-con {
+  flex: 0 0 17%;
 }
