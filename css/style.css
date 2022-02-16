@@ -49,6 +49,8 @@ img {
 /* MAIN CON */
 .main-con {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .main {
   width: 90%;
@@ -85,10 +87,10 @@ img {
   border: 1px solid var(--clr-white);
   padding: 0.5rem;
   cursor: pointer;
-  max-width: 30rem;
   transition: var(--trans);
   overflow: hidden;
   position: relative;
+  max-width: 30rem;
 }
 .img:hover {
   transform: scale(1.1);
@@ -96,6 +98,8 @@ img {
 .img-con:hover {
   padding: -3rem;
 }
+
+/*
 .img-con::after {
   content: "▷";
   background-color: rgba(255, 255, 255, 0.432);
@@ -114,6 +118,8 @@ img {
   transform: translateY(100%);
   border: 5px solid red;
 }
+*/
+
 .text {
   position: absolute;
   font-size: 2rem;
@@ -131,17 +137,4 @@ img {
   padding: 1rem;
   background: var(--clr-main);
   border-radius: var(--rad);
-}
-.inner {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.inner img {
-  width: 100%;
-}
-.img-con {
-  flex: 0 0 17%;
 }
